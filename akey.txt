@@ -1,0 +1,11 @@
+Secret key
+bnUz1gqrBanwPbJISxZm4UNwoXY9xIq0QcnE0aAi
+
+new key
+secret:
+oqsxqFZWaIEj7Tu3ev4o8kCcttieV6kuvbV4CAtk
+
+API:
+PK61TNWINAVOEE9C610J
+
+
