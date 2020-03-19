@@ -36,7 +36,7 @@ print ( " " )
 print ( f"Looking at the RAW format data we extracted..." )
 print ( f"---------------------------------------------------" )
 
-price_info = rx.get_barset(symbols='CODX', timeframe='1Min', limit=15)
+price_info = rx.get_barset(symbols='CODX', timeframe='1Min', limit=30)
 stock_bars = price_info['CODX']
 print ( f"{price_info}" )
 print ( " " )
@@ -66,7 +66,7 @@ for i in range(len(data_list)):
 num_of_datapoints = len(data_list)
 first_open = stock_bars[0].o
 last_close = stock_bars[-1].c
-percent_change = round( ((last_close - first_open) / first_open * 100),4 )
+percent_change = round( ((last_close - first_open) / first_open * 100),1 )
 print ( " " )
 print ( f"Now ACCESS specific data fields from the complex data structure..." )
 print ( f"---------------------------------------------------------------" )
