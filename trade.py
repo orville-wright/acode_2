@@ -35,8 +35,13 @@ print ( f"---------------- Stock price info ------------------" )
 print ( " " )
 print ( f"RAW format data..." )
 print ( f"--------------------" )
+
 price_info = rx.get_barset(symbols='CODX', timeframe='1Min', limit=15)
-print ( price_info )
+stock_bars = price_info['CODX']
+print ( f"Look inside ALL the data we extracted:\n {price_info}" )
+print ( " " )
+print ( f"Look at Price info for CODX:\n {stock_bars}" )
+
 #for k, v in price_info.items():
 #    print ( f"**KEY: {k}" )
 
@@ -53,10 +58,22 @@ data_list = price_info[list_of_my_keys[0]]
 for i in range(len(data_list)):
     print ( f"DATA ITEM #{i} is -> {data_list[i]}" )
 
+# Now access very specific parts of the data strcuitures
+num_of_datapoints = len(data_list)
+first_open = stock_bars[0].o
+last_close = stock_bars[-1].c
+percent_change = round( ((last_close - first_open) / first_open * 100),4 )
+print ( " " )
+print ( f"Access specific data fields from the complex data structure..." )
+print ( f"---------------------------------------------------------------" )
+print ( f"FIRST OPEN price: {first_open}" )
+print ( f"LAST CLOSE price: {last_close}" )
+print ( "CODX moved {}% in the last {} data points.".format(percent_change, num_of_datapoints))
+
 ################# Style 2 ############################'
 
-print ( " " )
-print ( "------------- Testing RAW Request method ---------------" )
+# print ( " " )
+# print ( "------------- Testing RAW Request method ---------------" )
 # r = requests.get( ACCURL, headers={'APCA-API-KEY-ID': APIKEY, 'APCA-API-SECRET-KEY': SECRETKEY} )
 
 #print (r.content)
