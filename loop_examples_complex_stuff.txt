@@ -1,0 +1,112 @@
+
+
+Types of loops...
+
+1.	For loop
+2.	While loop
+
+
+
+**********
+  For
+**********
+
+Example #1 - For loop
+=====================
+
+fruits = ["banana", "apple", "orange", "kiwi"]
+position = 0
+while position < len(fruits):
+    print(fruits[position])
+    position = position + 1
+print("reached end of list")
+
+
+
+Example #2 - For loop with ITERATOR
+====================================
+
+fruits = ["banana", "apple", "orange", "kiwi"]
+for food in fruits:
+    print(food)
+print("reached end of list")
+
+
+
+Example #3 - For loop with ELSE  condition
+==========================================
+
+fruits = ["banana", "apple", "orange", "kiwi"]
+for food in fruits:
+    print(food)
+else:
+    print("reached end of list")
+
+
+Example #4 - For loop
+=====================
+
+for letter in 'Python':     # loops through every letter in the word 'Python'
+   print 'Current Letter :', letter
+
+
+Example #5 - Nexted FOR loop with conditional tests
+=============================================
+z = 1
+for num in range(10,20):     #to iterate between 10 to 20
+   for i in range(2,num):    #to iterate on the factors of the number
+      if num%i == 0:         #to determine the first factor
+         j=num/i             #to calculate the second factor
+         print ( "LOOP #{} --- The number: {} equals {} * {}".format(z, num, i, j) )
+         break #to move to the next number, the #first FOR
+   else:                  # else part of the loop
+      print ( "LOOP #{} --- The number: {} is a prime number".format(z, num) )
+      z += 1
+
+ 
+
+**********
+  While
+**********
+
+Example #6 - While loop
+========================
+
+fruits = ["banana", "apple", "orange", "kiwi"]
+position = 0
+while position < len(fruits):
+    print(fruits[position])
+    position = position + 1
+else:
+    print("reached end of list")
+
+
+
+Example #7 - (Infinite while loop)
+==================================
+fruits = ["banana", "apple", "orange", "kiwi"]
+position = 0
+while True:
+    if position >= len(fruits):
+        break
+    print(fruits[position])
+    position = position + 1
+print("reached end of list")
+
+
+Example #8 - (comples WHILE loop)
+==================================
+i = 2
+while ( i < 100 ):
+    print ( f"LOOP # {i} ---> ", end="" )
+    j = 2
+    while ( j <= ( i/j ) ):
+        if not ( i%j ):
+            print( "{} is NOT a prime".format(i) )
+            break
+        j = j + 1
+    if ( j > i/j ):
+        print( f"{i} is prime!" )
+    i = i+1
+
+

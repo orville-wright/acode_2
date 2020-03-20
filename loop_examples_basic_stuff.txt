@@ -1,0 +1,80 @@
+
+Types of loops...
+
+1.	For loop
+2.	While loop
+
+
+
+**********
+  For
+**********
+
+Example #1 - kind of lazy, slower & more CPU/memory work
+==========
+
+for entry in range(0, 3):
+    print(entry)
+
+
+
+
+Example #2 - much better optimized, faster, less CPI/memory
+==========
+
+entryRange = range(0, 3)
+for entry in entryRange:
+    print(entry)
+
+
+
+Example #3 - loop & iterate over a DICTionary []
+==================================================
+my_dict = dict()  
+my_dict['xyz'] = 123
+my_dict['abc'] = 345
+my_dict['123'] = 019
+my_dict['0'] = 'zero'
+my_dict['sixtysix'] = 66
+my_dict['40'] = 'FORTY' 
+my_dict['Q'] = 545
+for i in my_dict : 
+    print( "Dictionary entry: {}  ---> Data item is: {} ".format(i, my_dict[i]) ) 
+
+
+
+
+**********
+  While
+**********
+
+Example #1
+==========
+
+entryRange = range(0, 3)
+index = 0
+while index < len(entryRange):
+    print(entryRange[index])
+    index = index + 1
+
+
+
+Example #2 - much better optimized, cleaner, less complex, less mem/cpu, faster
+==========
+
+index = 0
+while index < 3:			# uses a constant:  3  (no need to expand/test range(0,3)
+    print(index)
+    index = index + 1		# can also write this as:  index += 1
+
+
+
+
+Example #3 - another examplex of a counter
+==========================================
+count = 0
+while (count < 3):     
+    count = count + 1
+    print("Hello Geek") 
+
+
