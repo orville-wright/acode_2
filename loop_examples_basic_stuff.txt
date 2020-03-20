@@ -28,7 +28,17 @@ for entry in entryRange:
 
 
 
-Example #3 - loop & iterate over a DICTionary []
+Example #3 - a little bit more compliex
+=========================================
+for i in range(1, 10): 
+    for j in range(i): 
+         print( f"{i} ", end="" ) 
+    print( f"---> Finished loop # {i}") 
+
+
+
+
+Example #4 - loop & iterate over a DICTionary []
 ==================================================
 my_dict = dict()  
 my_dict['xyz'] = 123
