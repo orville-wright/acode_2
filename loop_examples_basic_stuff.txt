@@ -22,7 +22,7 @@ for entry in range(0, 3):
 Example #2 - much better optimized, faster, less CPI/memory
 ==========
 
-entryRange = range(0, 3)
+entryRange = range(-3, 7)
 for entry in entryRange:
     print(entry)
 
@@ -30,26 +30,33 @@ for entry in entryRange:
 
 Example #3 - a little bit more compliex
 =========================================
-for i in range(1, 10): 
-    for j in range(i): 
-         print( f"{i} ", end="" ) 
-    print( f"---> Finished loop # {i}") 
+for i in range(1, 10):
+    for j in range(i):
+         print( f"{i} " )
+    print( f"---> Finished loop # {i}")
 
+
+list = [6,2,4,2,6]
+for i in list:
+    for j in range(i):
+        print(f"\u2588", end="")
+    print( " " )
+=
 
 
 
 Example #4 - loop & iterate over a DICTionary []
 ==================================================
-my_dict = dict()  
+my_dict = dict()
 my_dict['xyz'] = 123
 my_dict['abc'] = 345
 my_dict['123'] = 019
 my_dict['0'] = 'zero'
 my_dict['sixtysix'] = 66
-my_dict['40'] = 'FORTY' 
+my_dict['40'] = 'FORTY'
 my_dict['Q'] = 545
-for i in my_dict : 
-    print( "Dictionary entry: {}  ---> Data item is: {} ".format(i, my_dict[i]) ) 
+for i in my_dict :
+    print( "Dictionary entry: {}  ---> Data item is: {} ".format(i, my_dict[i]) )
 
 
 
@@ -83,8 +90,6 @@ while index < 3:			# uses a constant:  3  (no need to expand/test range(0,3)
 Example #3 - another examplex of a counter
 ==========================================
 count = 0
-while (count < 3):     
+while (count < 3):
     count = count + 1
-    print("Hello Geek") 
-
-
+    print("Hello Geek")

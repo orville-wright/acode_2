@@ -31,6 +31,8 @@ for food in fruits:
     print(food)
 print("reached end of list")
 
+u"\u2588"
+
 
 
 Example #3 - For loop with ELSE  condition
@@ -63,7 +65,7 @@ for num in range(10,20):     #to iterate between 10 to 20
       print ( "LOOP #{} --- The number: {} is a prime number".format(z, num) )
       z += 1
 
- 
+
 
 **********
   While
@@ -108,5 +110,3 @@ while ( i < 100 ):
     if ( j > i/j ):
         print( f"{i} is prime!" )
     i = i+1
-
-
