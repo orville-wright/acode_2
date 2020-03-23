@@ -7,22 +7,26 @@ list4 = [2,4,6,2,4,6]
 list5 = [6,0,6,6,0,6]
 list6 = [list1,list2,list3,list4,list5]
 
+# function 1
 def pos_ls(x):
     for i in range(0,x):
         print(f"\u2588", end="")
     return
 
+# function 2
 def neg_ls(q):
     for i in range(0,q):
         print( " ", end="")
     return
 
+# function 3
 def neg_ws(a):
     for i in range(0,a):
         print( " ", end="" )
     return
 
-
+# Main code
+######################################################
 for i in list6:
     for j in range(len(i)):
         if j == 0 or j == 3:
